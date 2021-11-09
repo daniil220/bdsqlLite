@@ -9,11 +9,11 @@ namespace SQLlitleForIS_19_03.DB
         public int Id { get; set; }
         public string Name { get; set; }
 
-        public List<Email> Phones { get; set; }
+        public List<Email> Emails { get; set; }
 
         public override string ToString()
         {
-            return Name;
+            return Name ;
         }
 
 

@@ -153,7 +153,7 @@ namespace SQLlitleForIS_19_03.DB
                 {
                     foreach (var item in context.Emails.Include(x => x.User))
                     {
-                        Console.WriteLine(item);
+                        Console.WriteLine(item.Id + " " + item.Title);
                     }
                 }
                 catch (Exception ex)
@@ -232,7 +232,7 @@ namespace SQLlitleForIS_19_03.DB
                 {
                     foreach (var item in context.Users)
                     {
-                        Console.WriteLine(item);
+                        Console.WriteLine(item.Id + " " + item.Name);
                     }
                 }
                 catch (Exception ex)
